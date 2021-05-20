@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Movie table</title>
+</head>
+<body>
+
+	<div>
+		<h3>Movie details</h3>		
+
+		<table id="myTable">
+		  
+		  <thead>
+			  <tr>
+			  	<!--adding sort-->
+			    <th onclick="sortTable(0)">Name</th>
+			    <th onclick="sortTable(1)">Year</th>
+			    <th onclick="sortTable(2)">Quality</th> <!-- default is set as P-->
+			    <th onclick="sortTable(3)">Language</th>
+			  </tr>
+		  </thead>
+
+		  <tbody>
+
+			  <tr>
+			    <td>Forrest Gump</td>
+			    <td>1994</td>
+			    <td>1080P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Gangs of Wasseypur</td>
+			    <td>2012</td>
+			    <td>p</td>
+			    <td>Hindi</td>
+			  </tr>
+			  <tr>
+			    <td>John Wick</td>
+			    <td>2012</td>
+			    <td>p</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Justice League Snyders Cut</td>
+			    <td>2021</td>
+			    <td>1080P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Mechanic Resurrection</td>
+			    <td>2016</td>
+			    <td>p</td>
+			    <td>English</td>
+			  </tr>			  			  
+			  <tr>
+			    <td>Midway</td>
+			    <td>2019</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Molly's Game</td>
+			    <td>2017</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Need for Speed</td>
+			    <td>2014</td>
+			    <td>p</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Newton</td>
+			    <td>2017</td>
+			    <td>p</td>
+			    <td>Hindi</td>
+			  </tr>
+			  <tr>
+			    <td>Piper</td>
+			    <td>2016</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Predestination</td>
+			    <td>2014</td>
+			    <td>480P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Raya and the Last Dragon</td>
+			    <td>2021</td>
+			    <td>1080P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Spider-Man Homecoming</td>
+			    <td>2017</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Star Wars The Last Jedi</td>
+			    <td>2017</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Star Trek Beyond</td>
+			    <td>2016</td>
+			    <td>480P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Star Wars The Rise of Skywalker</td>
+			    <td>2019</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Suicide Squad</td>
+			    <td>2016</td>
+			    <td>480P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Sully</td>
+			    <td>2016</td>
+			    <td>1080P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>The Beauty Inside</td>
+			    <td>2015</td>
+			    <td>1080P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>The Bourne Collection <br>Identity, Supremacy, Ultimatum, Legacy, Jason Bourne</td>
+			    <td>2002-2016</td>
+			    <td>1080P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>The Escort</td>
+			    <td>2015</td>
+			    <td>p</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>The Longest Ride</td>
+			    <td>2015</td>
+			    <td>p</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>The Post</td>
+			    <td>2017</td>
+			    <td>p</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>The Shawshank Redemption</td>
+			    <td>1994</td>
+			    <td>p</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>The Terminal</td>
+			    <td>2004</td>
+			    <td>p</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>The Irishman</td>
+			    <td>2019</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>The Mummy</td>
+			    <td>2017</td>
+			    <td>p</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>The world before her</td>
+			    <td>2012</td>
+			    <td>p</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Thor</td>
+			    <td>2011</td>
+			    <td>p</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Three Meters Above The Sky</td>
+			    <td>2010</td>
+			    <td>p</td>
+			    <td>Spanish</td>
+			  </tr>
+			  <tr>
+			    <td>Titanic</td>
+			    <td>1997</td>
+			    <td>p</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Unstoppable</td>
+			    <td>2010</td>
+			    <td>1080P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Wonder Woman</td>
+			    <td>2017</td>
+			    <td>p</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>X-Men Apocalypse</td>
+			    <td>2016</td>
+			    <td>p</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>6 Underground</td>
+			    <td>2019</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>A Star is Born</td>
+			    <td>2018</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Ad Astra</td>
+			    <td>2019</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Atomic Blonde</td>
+			    <td>2017</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Avengers Age of Ultron</td>
+			    <td>2015</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Avengers Infinity War</td>
+			    <td>2018</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>David Attenborough A Life on Our Planet</td>
+			    <td>2020</td>
+			    <td>1080P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Fast and Furious Presents Hobbs and Shaw</td>
+			    <td>2019</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Finding Steve McQueen</td>
+			    <td>2019</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>forever my girl</td>
+			    <td>2018</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Green Book</td>
+			    <td>2019</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Hereditary</td>
+			    <td>2018</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Inception</td>
+			    <td>2010</td>
+			    <td>1080P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Laggies</td>
+			    <td>2014</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Mad Max Fury Road</td>
+			    <td>2015</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Moonstruck</td>
+			    <td>1987</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Mulan</td>
+			    <td>2020</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Nancy Drew and the Hidden Staircase</td>
+			    <td>2019</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Passengers</td>
+			    <td>2016</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Prometheus</td>
+			    <td>2012</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Promising Young Woman</td>
+			    <td>2020</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Ram Ke Naam (In the name of God) <br>- a documentary by Anand Patwardhan</td>
+			    <td>1991</td>
+			    <td>p</td>
+			    <td>Hindi</td>
+			  </tr>
+			  <tr>
+			    <td>rampage</td>
+			    <td>2018</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Red Sparrow</td>
+			    <td>2018</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Tag</td>
+			    <td>2018</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Tenet</td>
+			    <td>2020</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>The Miracle Season</td>
+			    <td>2018</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>The Accountant</td>
+			    <td>2016</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>The Age of Adaline</td>
+			    <td>2015</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>The Age of Innocence</td>
+			    <td>1993</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>The Avengers</td>
+			    <td>2012</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>The Book Thief</td>
+			    <td>2013</td>
+			    <td>1080P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>The Breakfast Club</td>
+			    <td>1985</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>The Dressmaker</td>
+			    <td>2015</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>The Martian</td>
+			    <td>2015</td>
+			    <td>1080P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>The Negotiator</td>
+			    <td>1998</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>The Proposal</td>
+			    <td>2009</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>To All the Boys Ive Loved Before</td>
+			    <td>2018</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Venom</td>
+			    <td>2018</td>
+			    <td>1080P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Whip It</td>
+			    <td>2009</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Alpha</td>
+			    <td>2018</td>
+			    <td>1080P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Attenborough's Life That Glows</td>
+			    <td>2016</td>
+			    <td>p</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Before Trilogy</td>
+			    <td>1993 - 2013</td>
+			    <td>p</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Blue Planet II</td>
+			    <td>2017</td>
+			    <td>p</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Captain Marvel</td>
+			    <td>2019</td>
+			    <td>1080P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Contagion</td>
+			    <td>2011</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Dark Waters</td>
+			    <td>2019</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Dunkirk</td>
+			    <td>2017</td>
+			    <td>p</td>
+			    <td>English</td>
+			  </tr>
+			  <tr>
+			    <td>Ford v Ferrari</td>
+			    <td>2019</td>
+			    <td>720P</td>
+			    <td>English</td>
+			  </tr>			  
+			  
+		  </tbody>
+		</table>
+	</div>
+
+	<script>
+		function sortTable(n) {
+			var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+			table = document.getElementById("myTable");
+			switching = true;
+			//Set the sorting direction to ascending:
+			dir = "asc";
+			/*Make a loop that will continue until
+			no switching has been done:*/
+			while (switching) {
+				//start by saying: no switching is done:
+				switching = false;
+				rows = table.rows;
+				/*Loop through all table rows (except the
+				first, which contains table headers):*/
+				for (i = 1; i < (rows.length - 1); i++) {
+					//start by saying there should be no switching:
+					shouldSwitch = false;
+					/*Get the two elements you want to compare,
+					one from current row and one from the next:*/
+					x = rows[i].getElementsByTagName("TD")[n];
+					y = rows[i + 1].getElementsByTagName("TD")[n];
+					/*check if the two rows should switch place,
+					based on the direction, asc or desc:*/
+					if (dir == "asc") {
+						if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+							//if so, mark as a switch and break the loop:
+							shouldSwitch= true;
+							break;
+						}
+					}
+					else if (dir == "desc") {
+						if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+							//if so, mark as a switch and break the loop:
+							shouldSwitch = true;
+							break;
+						}
+					}
+				}
+				if (shouldSwitch) {
+					/*If a switch has been marked, make the switch
+					and mark that a switch has been done:*/
+					rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+					switching = true;
+					//Each time a switch is done, increase this count by 1:
+					switchcount ++;
+				}
+				else {
+					/*If no switching has been done AND the direction is "asc",
+					set the direction to "desc" and run the while loop again.*/
+					if (switchcount == 0 && dir == "asc") {
+						dir = "desc";
+						switching = true;
+					}
+				}
+			}
+		}
+	</script>
+	
+</body>
+</html>
